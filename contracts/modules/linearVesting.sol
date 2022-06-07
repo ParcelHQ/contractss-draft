@@ -152,7 +152,7 @@ contract Vesting is Ownable, Initializable {
         startTime.length == numberOfAccounts,
       "Vesting: Array lengths differ"
     );
-
+    
     for (uint256 i = 0; i < numberOfAccounts; i++) {
       vest(
         accounts[i],
